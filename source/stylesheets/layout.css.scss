@@ -1,8 +1,74 @@
 $blue: #3bbfce;
 $margin: 16px;
 
+/* Layout
+-------------------------------------------------------------- */
+.container {
+  max-width: 30em;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: "skolar",serif;
+  font-weight: 400;
+  background: #fff;
+}
+
 h1 {
   color: $blue;
   font-size: 2em;
   line-height: 1em;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Mobile First RWD
+-------------------------------------------------------------- */
+@media screen and (min-width: 640px) {
+  body {
+    font-size: 112.5%;
+  }
+
+  .column {
+    float: left;
+    margin-right: 5%;
+  }
+
+  .one-third {
+    width: 30%;
+  }
+
+  .half {
+    width: 47.5%;
+  }
+
+  .two-third {
+    width: 65%;
+  }
+
+  .row .column:last-child {
+    margin-right: 0;
+    clear: right;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    font-size: 137.5%;
+  }
 }
