@@ -1,5 +1,25 @@
+/* Variable
+-------------------------------------------------------------- */
+$white: #fff;
 $blue: #3bbfce;
-$margin: 16px;
+$margin: 1.5em;
+
+/* Mixins
+-------------------------------------------------------------- */
+@mixin box-shadow {
+  box-shadow: 0 1px 3px rgba(16,42,46,0.25);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+@mixin fade {
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
 
 /* Layout
 -------------------------------------------------------------- */
@@ -7,6 +27,7 @@ $margin: 16px;
   max-width: 30em;
   width: 90%;
   margin: 0 auto;
+  padding: 0;
   position: relative;
 }
 
@@ -15,20 +36,87 @@ body {
   line-height: 1.5em;
   font-family: "skolar",serif;
   font-weight: 400;
-  background: #fff;
+  background: #FEFEFA;
 }
 
-h1 {
-  color: $blue;
-  font-size: 2em;
-  line-height: 1em;
-  margin: 0;
+.navigation-bar {
+  background: #333;
 }
 
 header {
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: $margin;
+  padding: 1em 0;
+  h1 {
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0;
+    text-transform: uppercase;
+    a {
+      color: $white;
+      text-decoration: none;
+      @include fade;
+      &:visited {
+        color: $white;
+      }
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+/* Basic Styles
+-------------------------------------------------------------- */
+h2 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 400;
+  margin: 0 0 .5em;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1em;
+  color: #b3b3b1;
+  margin: 0;
+}
+
+/* Elements
+-------------------------------------------------------------- */
+.box {
+  background: $white;
+  padding: 1em;
+  @include box-shadow;
+}
+.btn {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  padding: 0 20px;
+  border: 0;
+  color: #666665;
+  background-color: #dededc;
+  font-size: 14px;
+  line-height: 41px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  vertical-align: bottom;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 /* Mobile First RWD
