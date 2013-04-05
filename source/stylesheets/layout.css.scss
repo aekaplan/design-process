@@ -180,20 +180,20 @@ img {
   height: auto;
 }
 
-.clock {
-  background: url("/images/clock.png");
-  background-size: 31px 31px;
-  float: left;
-  height: 31px;
-  width: 31px;
-}
-
 .map {
   background: url("/images/map.png");
   background-size: 100px 84px;
   height: 84px;
   width: 100px;
   margin: 0 auto 1em;
+}
+
+.clock {
+  background: url("/images/clock.png");
+  background-size: 31px 31px;
+  float: left;
+  height: 31px;
+  width: 31px;
 }
 
 .discovery {
@@ -242,6 +242,19 @@ img {
   width: 280px;
   height: 250px;
   margin: 0 auto;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .clock { background: url("/images/clock-2x.png") ;}
+  .map { background: url("/images/map-2x.png"); }
+  .discovery { background: url("/images/discovery-2x.png"); }
+  .wireframing { background: url("/images/wireframing-2x.png"); }
+  .prototyping { background: url("/images/prototyping-2x.png"); }
+  .user-testing { background: url("/images/user-testing-2x.png"); }
+  .visual-design { background: url("/images/visual-design-2x.png"); }
+  .implementation { background: url("/images/implementation-2x.png"); }
 }
 
 /* Clearfix
