@@ -251,21 +251,41 @@ img {
     background: url("/images/clock-2x.png");
     background-size: 31px 31px;
   }
+
   .map {
     background: url("/images/map-2x.png");
     background-size: 100px 84px;
   }
+
   .discovery {
     background: url("/images/discovery-2x.png");
     background-size: 280px 250px;
-    width: 280px;
-    height: 250px;
   }
-  .wireframing { background: url("/images/wireframing-2x.png"); }
-  .prototyping { background: url("/images/prototyping-2x.png"); }
-  .user-testing { background: url("/images/user-testing-2x.png"); }
-  .visual-design { background: url("/images/visual-design-2x.png"); }
-  .implementation { background: url("/images/implementation-2x.png"); }
+
+  .wireframing {
+    background: url("/images/wireframing-2x.png");
+    background-size: 280px 250px;
+  }
+
+  .prototyping {
+    background: url("/images/prototyping-2x.png");
+    background-size: 280px 250px;
+  }
+
+  .user-testing {
+    background: url("/images/user-testing-2x.png");
+    background-size: 280px 250px;
+  }
+
+  .visual-design {
+    background: url("/images/visual-design-2x.png");
+    background-size: 280px 250px;
+  }
+
+  .implementation {
+    background: url("/images/implementation-2x.png");
+    background-size: 280px 250px;
+  }
 }
 
 /* Clearfix
