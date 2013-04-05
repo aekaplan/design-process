@@ -247,9 +247,20 @@ img {
 @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  .clock { background: url("/images/clock-2x.png") ;}
-  .map { background: url("/images/map-2x.png"); }
-  .discovery { background: url("/images/discovery-2x.png"); }
+  .clock {
+    background: url("/images/clock-2x.png");
+    background-size: 31px 31px;
+  }
+  .map {
+    background: url("/images/map-2x.png");
+    background-size: 100px 84px;
+  }
+  .discovery {
+    background: url("/images/discovery-2x.png");
+    background-size: 280px 250px;
+    width: 280px;
+    height: 250px;
+  }
   .wireframing { background: url("/images/wireframing-2x.png"); }
   .prototyping { background: url("/images/prototyping-2x.png"); }
   .user-testing { background: url("/images/user-testing-2x.png"); }
